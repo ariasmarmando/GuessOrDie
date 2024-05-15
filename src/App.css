@@ -1,0 +1,390 @@
+#root {
+  max-width: 1280px;
+  width: 900px;
+  height: 950px;
+  margin: auto auto;
+  text-align: center;
+  overflow: scroll;
+  font-size: 100%;
+}
+.lostScreen{
+  display: grid;
+ position: absolute;
+  height: 900px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(65, 65, 65, 0.73);
+  z-index: 100;
+}
+.lostScreen h1{
+  margin: auto auto;
+  padding-top: 40%;
+  grid-row: 1;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: #eecfbc;
+}
+.lostScreen button{
+  grid-row: 2;
+  font-family: Roboto, sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin: auto auto 25%;
+  border-radius: 30px;
+  background-color: #be6528;
+  color: #eecfbc;
+  border: 10px solid #cc9878;
+  filter: drop-shadow(0 0 0.4rem #1c1b1b);
+}
+.lostScreenInner{
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-rows: 40% 60%;
+  left: 0;
+  right: 0;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(89, 84, 84, 0.37) url("gameResources/startScreenBg1.svg");
+  filter: drop-shadow(0 0 1.1rem #262626);
+  border-radius: 90px;
+  border-top: 20px solid #dbaa85;
+  border-bottom: 20px solid #dbaa85;
+}
+
+/* Game Start Screen*/
+.gameStarter{
+  display: grid;
+  position: absolute;
+  height: 900px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(65, 65, 65, 0.96);
+  z-index: 100;
+
+}
+.gameStarter p{
+  margin: auto auto;
+  padding-top: 40%;
+  grid-row: 1;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: #eecfbc;
+}
+.gameStarter button{
+  grid-row: 2;
+  font-family: Roboto, sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin: auto auto 25%;
+  border-radius: 30px;
+  background-color: #be6528;
+  color: #eecfbc;
+  border: 10px solid #cc9878;
+  filter: drop-shadow(0 0 0.4rem #1c1b1b);
+}
+.gameStarter button:hover{
+  cursor: pointer;
+  background-color: #ec8034;
+  border: 10px solid #56425b;
+}
+.gameStarterInner{
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-rows: 40% 60%;
+  left: 0;
+  right: 0;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(89, 84, 84, 0.37) url("gameResources/startScreenBg1.svg");
+  filter: drop-shadow(0 0 1.1rem #262626);
+  border-radius: 90px;
+  border-top: 20px solid #dbaa85;
+  border-bottom: 20px solid #dbaa85;
+}
+/********************/
+
+.entireGame{
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 10% 10% 15% 40% 10%;
+  aspect-ratio: 1/1;
+}
+
+.gridContainer{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 90% 10%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #e5e5f7;
+  z-index: -2;
+}
+.sceneBackground{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 65%;
+  grid-row: 1/3;
+  grid-column: 1/5;
+}
+.gridContainer .guessedNumber{
+  grid-row: 1;
+  grid-column: 1;
+  background: url("gameResources/guessedBg.svg");
+  height: 17%;
+  width: 98%;
+}
+.guessedNumber #guessedP{
+  color: #EEF5F3;
+  padding-top: 10px;
+}
+.gridContainer p{
+  display: block;
+  color: #56425b;
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin: 0 auto;
+  grid-row: 2;
+  grid-column: 1/5;
+}
+.gridContainer img.userPlayer{
+  grid-row: 1/3;
+  grid-column: 2;
+  display: block;
+  width: 200px;
+  height: 200px;
+  z-index:3;
+  margin: auto;
+  transition: all 4ms linear;
+}
+.gridContainer img.machinePlayer{
+  grid-column: 3;
+  grid-row: 1/3;
+  display: block;
+  width: 200px;
+  height: 200px;
+  z-index:2;
+  margin: auto;
+}
+.gridContainer .map{
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin-top: 24%;
+  width: 100%;
+  height: 30%;
+  border-bottom: 5px solid #6b251e;
+}
+.guessDisplay{
+  margin: auto;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  background:url("gameResources/uiTexture1.svg");
+}
+.formFields{
+  grid-column: 1/3;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.guessAnumBg{
+  background: url("gameResources/guessedBg.svg");
+  margin: auto auto;
+  grid-row: 1;
+  display: block;
+  grid-column: 1;
+  padding-top: 3px;
+  font-size: 1.4rem;
+  color: #EEF5F3;
+  font-weight: bolder;
+  height: 80%;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+.formFields input{
+  grid-row: 1;
+  display: block;
+  grid-column: 2;
+  margin: auto auto;
+  background-color: #EEF5F3;
+  color: #56425b;
+  width: 20%;
+  height: auto;
+  font-size: 3em;
+  font-family: Roboto, sans-serif;
+  border: 3px solid #56425b;
+  border-radius: 6px;
+  text-align: center;
+}
+.formFields button{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-row: 1;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+  width: 50%;
+  height: 84%;
+  margin: auto auto;
+  border-radius: 6px;
+  color: #EEF5F3;
+  background:url("gameResources/buttonOpt1.svg");
+}
+.formFields button:hover{
+  cursor: pointer;
+}
+
+.statusBar{
+  margin: 0 auto;
+  justify-self: center;
+  display: grid;
+  width: 98%;
+  height: auto;
+  grid-template-columns: 45% 10% 45%;
+  grid-template-rows: 100%;
+  background:#e5e5f7;
+  border: 10px solid #e5e5f7;
+}
+.leftHpSec{
+  display: flex;
+  background:url("gameResources/uiTexture1.svg");
+  border-bottom: 10px solid #6b251e;
+  border-bottom-left-radius: 10px;
+}
+.rightHpSec{
+  display: flex;
+  background:url("gameResources/uiTexture1.svg");
+  border-bottom: 10px solid #6b251e;
+  border-bottom-right-radius: 10px;
+}
+.rightHpSec p {
+  color: #1a1a1a;
+  font-weight: bolder;
+  font-size: 1em;
+}
+.leftHpSec p {
+  color: #1a1a1a;
+  font-weight: bolder;
+  font-size: 1em;
+}
+.statusBar img{
+  width: 30%;
+}
+
+
+.healthEmpty{
+  margin: auto auto;
+  background-color: #e5e5f7;
+  opacity: 50;
+  background-image:  linear-gradient(135deg, #c55b63 25%, transparent 25%), linear-gradient(225deg, #c55b63 25%, transparent 25%), linear-gradient(45deg, #c55b63 25%, transparent 25%), linear-gradient(315deg, #c55b63 25%, #e5e5f7 25%);
+  background-position:  10px 0, 10px 0, 0 0, 0 0;
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  height: 3rem;
+  width: 80%;
+  border: .3rem solid #6b251e;
+  border-radius: 3px;
+}
+.playerHealthBar{
+  margin: 0 auto;
+  background-color: #e5e5f7;
+  opacity: 50;
+  background-image:  linear-gradient(135deg, #4d8b71 25%, transparent 25%), linear-gradient(225deg, #4d8b71 25%, transparent 25%), linear-gradient(45deg, #4d8b71 25%, transparent 25%), linear-gradient(315deg, #4d8b71 25%, #e5e5f7 25%);
+  background-position:  10px 0, 10px 0, 0 0, 0 0;
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  height: 3rem;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1vh;
+  transition: all .5s linear;
+}
+.playerHealthBar p {
+  margin: auto;
+  font-size: 1.5rem;
+  color: #2e323d;
+  font-family: Roboto, sans-serif;
+  transition: all .5s linear;
+}
+.consoleHealthBar{
+  margin: 0 auto;
+  background-color: #e5e5f7;
+  opacity: 50;
+  background-image:  linear-gradient(135deg, #4d8b71 25%, transparent 25%), linear-gradient(225deg, #4d8b71 25%, transparent 25%), linear-gradient(45deg, #4d8b71 25%, transparent 25%), linear-gradient(315deg, #4d8b71 25%, #e5e5f7 25%);
+  background-position:  10px 0, 10px 0, 0 0, 0 0;
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  height: 3rem;
+  grid-column: 3;
+  grid-row: 1;
+  transition: all .5s linear;
+}
+.consoleHealthBar p {
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  color: #2e323d;
+  transition: all .5s linear;
+}
+
+.statusBar #vs{
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  overflow: hidden;
+  background:#6b251e;
+  border-bottom: 10px solid #6b251e;
+}
+.statusBar #vs img{
+  margin: 0 auto;
+  width: 104%;
+}
+
+.diceDisplay{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5f7;
+  opacity: 100%;
+  background-image:  linear-gradient(#814666 1px, transparent 1px), linear-gradient(to right, #814666 1px, #d0d0d0 1px);
+  background-size: 10px 10px;
+  color: #e5e5f7;
+
+}
+.diceDisplay p#num{
+  margin: 0 auto;
+  padding-top: 5px;
+  font-size: 3em;
+  font-weight: bolder;
+  color: #EEF5F3;
+}
+.answerEncasing{
+  margin: 0 auto;
+  width: 10%;
+  height: 100%;
+  background:url("gameResources/answerBg1.svg");
+  filter: drop-shadow(0 0 0.2rem #3b3b3b);
+  border-radius: 5px;
+}
+.correctInd{
+  width: 100%;
+  height: 100%;
+  background:url("gameResources/uiTexture1.svg");
+  font-size: 1em;
+}
+
+
+
