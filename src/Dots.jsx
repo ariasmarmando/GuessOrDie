@@ -160,16 +160,16 @@ export default function Dots(props){
 
 
     const floors = [
-        './src/gameResources/Maps/Floors/floorOption1.svg',
-        './src/gameResources/Maps/Floors/floorOption2.svg',
-        './src/gameResources/Maps/Floors/floorOption3.svg',
-        './src/gameResources/Maps/Floors/floorOption4.svg'
+        './blob/main/src/gameResources/Maps/Floors/floorOption1.svg',
+        './blob/main/src/gameResources/Maps/Floors/floorOption2.svg',
+        './blob/main/src/gameResources/Maps/Floors/floorOption3.svg',
+        './blob/main/src/gameResources/Maps/Floors/floorOption4.svg'
     ];
     const backgrounds = [
-        "./src/gameResources/Maps/Backgrounds/scene1.svg",
-        "./src/gameResources/Maps/Backgrounds/scene2.svg",
-        "./src/gameResources/Maps/Backgrounds/scene3.svg",
-        "./src/gameResources/Maps/Backgrounds/scene4.svg"
+        "./blob/main/src/gameResources/Maps/Backgrounds/scene1.svg",
+        "./blob/main/src/gameResources/Maps/Backgrounds/scene2.svg",
+        "./blob/main/src/gameResources/Maps/Backgrounds/scene3.svg",
+        "./blob/main/src/gameResources/Maps/Backgrounds/scene4.svg"
     ]
 
     const difficulty=["1 or 2", "1 - 3", "1 -4", "1-5"];
