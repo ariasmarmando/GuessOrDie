@@ -2,99 +2,99 @@ import React from "react";
 import {useEffect, useState} from "react";
 import './App.css';
 
-import MainCharIdle1 from './gameResources/mainChar/mainCharIddle1.svg';
-import MainCharIdle2 from './gameResources/mainChar/mainCharIddle2.svg';
-import MainCharIdle3 from './gameResources/mainChar/mainCharIddle3.svg';
-import MainCharIdle4 from './gameResources/mainChar/mainCharIddle4.svg';
-import MainCharIdle5 from './gameResources/mainChar/mainCharIddle5.svg';
-import MainCharIdle6 from './gameResources/mainChar/mainCharIddle6.svg';
-import MainCharAtt1 from './gameResources/mainChar/mainCharAtt1.svg';
-import MainCharAtt2 from './gameResources/mainChar/mainCharAtt2.svg';
-import MainCharAtt3 from './gameResources/mainChar/mainCharAtt3.svg';
-import MainCharAtt4 from './gameResources/mainChar/mainCharAtt4.svg';
-import MainCharAtt5 from './gameResources/mainChar/mainCharAtt5.svg';
-import MainCharAtt6 from './gameResources/mainChar/mainCharAtt6.svg';
-import MainCharDmg1 from './gameResources/mainChar/mainCharDmg1.svg';
-import MainCharDmg2 from './gameResources/mainChar/mainCharDmg2.svg';
-import MainCharDmg3 from './gameResources/mainChar/mainCharDmg3.svg';
-import MainCharDmg4 from './gameResources/mainChar/mainCharDmg4.svg';
-import MainCharDmg5 from './gameResources/mainChar/mainCharDmg5.svg';
-import MainCharDmg6 from './gameResources/mainChar/mainCharDmg6.svg';
+import MainCharIdle1 from './assets/gameResources/mainChar/mainCharIddle1.svg';
+import MainCharIdle2 from './assets/gameResources/mainChar/mainCharIddle2.svg';
+import MainCharIdle3 from './assets/gameResources/mainChar/mainCharIddle3.svg';
+import MainCharIdle4 from './assets/gameResources/mainChar/mainCharIddle4.svg';
+import MainCharIdle5 from './assets/gameResources/mainChar/mainCharIddle5.svg';
+import MainCharIdle6 from './assets/gameResources/mainChar/mainCharIddle6.svg';
+import MainCharAtt1 from './assets/gameResources/mainChar/mainCharAtt1.svg';
+import MainCharAtt2 from './assets/gameResources/mainChar/mainCharAtt2.svg';
+import MainCharAtt3 from './assets/gameResources/mainChar/mainCharAtt3.svg';
+import MainCharAtt4 from './assets/gameResources/mainChar/mainCharAtt4.svg';
+import MainCharAtt5 from './assets/gameResources/mainChar/mainCharAtt5.svg';
+import MainCharAtt6 from './assets/gameResources/mainChar/mainCharAtt6.svg';
+import MainCharDmg1 from './assets/gameResources/mainChar/mainCharDmg1.svg';
+import MainCharDmg2 from './assets/gameResources/mainChar/mainCharDmg2.svg';
+import MainCharDmg3 from './assets/gameResources/mainChar/mainCharDmg3.svg';
+import MainCharDmg4 from './assets/gameResources/mainChar/mainCharDmg4.svg';
+import MainCharDmg5 from './assets/gameResources/mainChar/mainCharDmg5.svg';
+import MainCharDmg6 from './assets/gameResources/mainChar/mainCharDmg6.svg';
 
-import EnemyOneIdle1 from './gameResources/enemyOne/enemy1Iddle1.svg';
-import EnemyOneIdle2 from './gameResources/enemyOne/enemy1Iddle2.svg';
-import EnemyOneIdle3 from './gameResources/enemyOne/enemy1Iddle3.svg';
-import EnemyOneIdle4 from './gameResources/enemyOne/enemy1Iddle4.svg';
-import EnemyOneIdle5 from './gameResources/enemyOne/enemy1Iddle5.svg';
-import EnemyOneIdle6 from './gameResources/enemyOne/enemy1Iddle6.svg';
-import EnemyOneDmg1 from './gameResources/enemyOne/enemyOneDmg1.svg';
-import EnemyOneDmg2 from './gameResources/enemyOne/enemyOneDmg2.svg';
-import EnemyOneDmg3 from './gameResources/enemyOne/enemyOneDmg3.svg';
-import EnemyOneDmg4 from './gameResources/enemyOne/enemyOneDmg4.svg';
-import EnemyOneDmg5 from './gameResources/enemyOne/enemyOneDmg5.svg';
-import EnemyOneDmg6 from './gameResources/enemyOne/enemyOneDmg6.svg';
-import EnemyOneAtt1 from './gameResources/enemyOne/enemyOneAtt1.svg';
-import EnemyOneAtt2 from './gameResources/enemyOne/enemyOneAtt2.svg';
-import EnemyOneAtt3 from './gameResources/enemyOne/enemyOneAtt3.svg';
-import EnemyOneAtt4 from './gameResources/enemyOne/enemyOneAtt4.svg';
-import EnemyOneAtt5 from './gameResources/enemyOne/enemyOneAtt5.svg';
-import EnemyOneAtt6 from './gameResources/enemyOne/enemyOneAtt6.svg';
+import EnemyOneIdle1 from './assets/gameResources/enemyOne/enemy1Iddle1.svg';
+import EnemyOneIdle2 from './assets/gameResources/enemyOne/enemy1Iddle2.svg';
+import EnemyOneIdle3 from './assets/gameResources/enemyOne/enemy1Iddle3.svg';
+import EnemyOneIdle4 from './assets/gameResources/enemyOne/enemy1Iddle4.svg';
+import EnemyOneIdle5 from './assets/gameResources/enemyOne/enemy1Iddle5.svg';
+import EnemyOneIdle6 from './assets/gameResources/enemyOne/enemy1Iddle6.svg';
+import EnemyOneDmg1 from './assets/gameResources/enemyOne/enemyOneDmg1.svg';
+import EnemyOneDmg2 from './assets/gameResources/enemyOne/enemyOneDmg2.svg';
+import EnemyOneDmg3 from './assets/gameResources/enemyOne/enemyOneDmg3.svg';
+import EnemyOneDmg4 from './assets/gameResources/enemyOne/enemyOneDmg4.svg';
+import EnemyOneDmg5 from './assets/gameResources/enemyOne/enemyOneDmg5.svg';
+import EnemyOneDmg6 from './assets/gameResources/enemyOne/enemyOneDmg6.svg';
+import EnemyOneAtt1 from './assets/gameResources/enemyOne/enemyOneAtt1.svg';
+import EnemyOneAtt2 from './assets/gameResources/enemyOne/enemyOneAtt2.svg';
+import EnemyOneAtt3 from './assets/gameResources/enemyOne/enemyOneAtt3.svg';
+import EnemyOneAtt4 from './assets/gameResources/enemyOne/enemyOneAtt4.svg';
+import EnemyOneAtt5 from './assets/gameResources/enemyOne/enemyOneAtt5.svg';
+import EnemyOneAtt6 from './assets/gameResources/enemyOne/enemyOneAtt6.svg';
 
-import EnemyTwoIdle1 from './gameResources/enemyTwo/enemyTwoIddle1.svg';
-import EnemyTwoIdle2 from './gameResources/enemyTwo/enemyTwoIddle2.svg';
-import EnemyTwoIdle3 from './gameResources/enemyTwo/enemyTwoIddle3.svg';
-import EnemyTwoIdle4 from './gameResources/enemyTwo/enemyTwoIddle4.svg';
-import EnemyTwoIdle5 from './gameResources/enemyTwo/enemyTwoIddle5.svg';
-import EnemyTwoIdle6 from './gameResources/enemyTwo/enemyTwoIddle6.svg';
-import EnemyTwoAtt1 from './gameResources/enemyTwo/enemyTwoAtt1.svg';
-import EnemyTwoAtt2 from './gameResources/enemyTwo/enemyTwoAtt2.svg';
-import EnemyTwoAtt3 from './gameResources/enemyTwo/enemyTwoAtt3.svg';
-import EnemyTwoAtt4 from './gameResources/enemyTwo/enemyTwoAtt4.svg';
-import EnemyTwoAtt5 from './gameResources/enemyTwo/enemyTwoAtt5.svg';
-import EnemyTwoAtt6 from './gameResources/enemyTwo/enemyTwoAtt6.svg';
-import EnemyTwoDmg1 from './gameResources/enemyTwo/enemyTwoDmg1.svg';
-import EnemyTwoDmg2 from './gameResources/enemyTwo/enemyTwoDmg2.svg';
-import EnemyTwoDmg3 from './gameResources/enemyTwo/enemyTwoDmg3.svg';
-import EnemyTwoDmg4 from './gameResources/enemyTwo/enemyTwoDmg4.svg';
-import EnemyTwoDmg5 from './gameResources/enemyTwo/enemyTwoDmg5.svg';
-import EnemyTwoDmg6 from './gameResources/enemyTwo/enemyTwoDmg6.svg';
+import EnemyTwoIdle1 from './assets/gameResources/enemyTwo/enemyTwoIddle1.svg';
+import EnemyTwoIdle2 from './assets/gameResources/enemyTwo/enemyTwoIddle2.svg';
+import EnemyTwoIdle3 from './assets/gameResources/enemyTwo/enemyTwoIddle3.svg';
+import EnemyTwoIdle4 from './assets/gameResources/enemyTwo/enemyTwoIddle4.svg';
+import EnemyTwoIdle5 from './assets/gameResources/enemyTwo/enemyTwoIddle5.svg';
+import EnemyTwoIdle6 from './assets/gameResources/enemyTwo/enemyTwoIddle6.svg';
+import EnemyTwoAtt1 from './assets/gameResources/enemyTwo/enemyTwoAtt1.svg';
+import EnemyTwoAtt2 from './assets/gameResources/enemyTwo/enemyTwoAtt2.svg';
+import EnemyTwoAtt3 from './assets/gameResources/enemyTwo/enemyTwoAtt3.svg';
+import EnemyTwoAtt4 from './assets/gameResources/enemyTwo/enemyTwoAtt4.svg';
+import EnemyTwoAtt5 from './assets/gameResources/enemyTwo/enemyTwoAtt5.svg';
+import EnemyTwoAtt6 from './assets/gameResources/enemyTwo/enemyTwoAtt6.svg';
+import EnemyTwoDmg1 from './assets/gameResources/enemyTwo/enemyTwoDmg1.svg';
+import EnemyTwoDmg2 from './assets/gameResources/enemyTwo/enemyTwoDmg2.svg';
+import EnemyTwoDmg3 from './assets/gameResources/enemyTwo/enemyTwoDmg3.svg';
+import EnemyTwoDmg4 from './assets/gameResources/enemyTwo/enemyTwoDmg4.svg';
+import EnemyTwoDmg5 from './assets/gameResources/enemyTwo/enemyTwoDmg5.svg';
+import EnemyTwoDmg6 from './assets/gameResources/enemyTwo/enemyTwoDmg6.svg';
 
-import EnemyThreeIdle1 from './gameResources/enemyThree/enemyThreeIdle1.svg';
-import EnemyThreeIdle2 from './gameResources/enemyThree/enemyThreeIdle2.svg';
-import EnemyThreeIdle3 from './gameResources/enemyThree/enemyThreeIdle3.svg';
-import EnemyThreeIdle4 from './gameResources/enemyThree/enemyThreeIdle4.svg';
-import EnemyThreeIdle5 from './gameResources/enemyThree/enemyThreeIdle5.svg';
-import EnemyThreeIdle6 from './gameResources/enemyThree/enemyThreeIdle6.svg';
-import EnemyThreeAtt1 from './gameResources/enemyThree/enemyThreeAtt1.svg';
-import EnemyThreeAtt2 from './gameResources/enemyThree/enemyThreeAtt2.svg';
-import EnemyThreeAtt3 from './gameResources/enemyThree/enemyThreeAtt3.svg';
-import EnemyThreeAtt4 from './gameResources/enemyThree/enemyThreeAtt4.svg';
-import EnemyThreeAtt5 from './gameResources/enemyThree/enemyThreeAtt5.svg';
-import EnemyThreeAtt6 from './gameResources/enemyThree/enemyThreeAtt6.svg';
-import EnemyThreeDmg1 from './gameResources/enemyThree/enemyThreeDmg1.svg';
-import EnemyThreeDmg2 from './gameResources/enemyThree/enemyThreeDmg2.svg';
-import EnemyThreeDmg3 from './gameResources/enemyThree/enemyThreeDmg3.svg';
-import EnemyThreeDmg4 from './gameResources/enemyThree/enemyThreeDmg4.svg';
-import EnemyThreeDmg5 from './gameResources/enemyThree/enemyThreeDmg5.svg';
-import EnemyThreeDmg6 from './gameResources/enemyThree/enemyThreeDmg6.svg';
-import EnemyFourIdle1 from './gameResources/enemyFour/enemyFourIdle1.svg';
-import EnemyFourIdle2 from './gameResources/enemyFour/enemyFourIdle2.svg';
-import EnemyFourIdle3 from './gameResources/enemyFour/enemyFourIdle3.svg';
-import EnemyFourIdle4 from './gameResources/enemyFour/enemyFourIdle4.svg';
-import EnemyFourIdle5 from './gameResources/enemyFour/enemyFourIdle5.svg';
-import EnemyFourIdle6 from './gameResources/enemyFour/enemyFourIdle6.svg';
-import EnemyFourAtt1 from './gameResources/enemyFour/enemyFourIAtt1.svg';
-import EnemyFourAtt2 from './gameResources/enemyFour/enemyFourIAtt2.svg';
-import EnemyFourAtt3 from './gameResources/enemyFour/enemyFourIAtt3.svg';
-import EnemyFourAtt4 from './gameResources/enemyFour/enemyFourIAtt4.svg';
-import EnemyFourAtt5 from './gameResources/enemyFour/enemyFourIAtt5.svg';
-import EnemyFourAtt6 from './gameResources/enemyFour/enemyFourIAtt6.svg';
-import EnemyFourDmg1 from './gameResources/enemyFour/enemyFourDmg1.svg';
-import EnemyFourDmg2 from './gameResources/enemyFour/enemyFourDmg2.svg';
-import EnemyFourDmg3 from './gameResources/enemyFour/enemyFourDmg3.svg';
-import EnemyFourDmg4 from './gameResources/enemyFour/enemyFourDmg4.svg';
-import EnemyFourDmg5 from './gameResources/enemyFour/enemyFourDmg5.svg';
-import EnemyFourDmg6 from './gameResources/enemyFour/enemyFourDmg6.svg';
+import EnemyThreeIdle1 from './assets/gameResources/enemyThree/enemyThreeIdle1.svg';
+import EnemyThreeIdle2 from './assets/gameResources/enemyThree/enemyThreeIdle2.svg';
+import EnemyThreeIdle3 from './assets/gameResources/enemyThree/enemyThreeIdle3.svg';
+import EnemyThreeIdle4 from './assets/gameResources/enemyThree/enemyThreeIdle4.svg';
+import EnemyThreeIdle5 from './assets/gameResources/enemyThree/enemyThreeIdle5.svg';
+import EnemyThreeIdle6 from './assets/gameResources/enemyThree/enemyThreeIdle6.svg';
+import EnemyThreeAtt1 from './assets/gameResources/enemyThree/enemyThreeAtt1.svg';
+import EnemyThreeAtt2 from './assets/gameResources/enemyThree/enemyThreeAtt2.svg';
+import EnemyThreeAtt3 from './assets/gameResources/enemyThree/enemyThreeAtt3.svg';
+import EnemyThreeAtt4 from './assets/gameResources/enemyThree/enemyThreeAtt4.svg';
+import EnemyThreeAtt5 from './assets/gameResources/enemyThree/enemyThreeAtt5.svg';
+import EnemyThreeAtt6 from './assets/gameResources/enemyThree/enemyThreeAtt6.svg';
+import EnemyThreeDmg1 from './assets/gameResources/enemyThree/enemyThreeDmg1.svg';
+import EnemyThreeDmg2 from './assets/gameResources/enemyThree/enemyThreeDmg2.svg';
+import EnemyThreeDmg3 from './assets/gameResources/enemyThree/enemyThreeDmg3.svg';
+import EnemyThreeDmg4 from './assets/gameResources/enemyThree/enemyThreeDmg4.svg';
+import EnemyThreeDmg5 from './assets/gameResources/enemyThree/enemyThreeDmg5.svg';
+import EnemyThreeDmg6 from './assets/gameResources/enemyThree/enemyThreeDmg6.svg';
+import EnemyFourIdle1 from './assets/gameResources/enemyFour/enemyFourIdle1.svg';
+import EnemyFourIdle2 from './assets/gameResources/enemyFour/enemyFourIdle2.svg';
+import EnemyFourIdle3 from './assets/gameResources/enemyFour/enemyFourIdle3.svg';
+import EnemyFourIdle4 from './assets/gameResources/enemyFour/enemyFourIdle4.svg';
+import EnemyFourIdle5 from './assets/gameResources/enemyFour/enemyFourIdle5.svg';
+import EnemyFourIdle6 from './assets/gameResources/enemyFour/enemyFourIdle6.svg';
+import EnemyFourAtt1 from './assets/gameResources/enemyFour/enemyFourIAtt1.svg';
+import EnemyFourAtt2 from './assets/gameResources/enemyFour/enemyFourIAtt2.svg';
+import EnemyFourAtt3 from './assets/gameResources/enemyFour/enemyFourIAtt3.svg';
+import EnemyFourAtt4 from './assets/gameResources/enemyFour/enemyFourIAtt4.svg';
+import EnemyFourAtt5 from './assets/gameResources/enemyFour/enemyFourIAtt5.svg';
+import EnemyFourAtt6 from './assets/gameResources/enemyFour/enemyFourIAtt6.svg';
+import EnemyFourDmg1 from './assets/gameResources/enemyFour/enemyFourDmg1.svg';
+import EnemyFourDmg2 from './assets/gameResources/enemyFour/enemyFourDmg2.svg';
+import EnemyFourDmg3 from './assets/gameResources/enemyFour/enemyFourDmg3.svg';
+import EnemyFourDmg4 from './assets/gameResources/enemyFour/enemyFourDmg4.svg';
+import EnemyFourDmg5 from './assets/gameResources/enemyFour/enemyFourDmg5.svg';
+import EnemyFourDmg6 from './assets/gameResources/enemyFour/enemyFourDmg6.svg';
 export default function Dots(props){
 
     const [index, setIndex] = useState(0);
@@ -160,16 +160,16 @@ export default function Dots(props){
 
 
     const floors = [
-        "src/gameResources/floorOption1.svg",
-        'src/gameResources/floorOption2.svg',
-        'src/gameResources/floorOption3.svg',
-        'src/gameResources/floorOption4.svg'
+        "src/assets/gameResources/floorOption1.svg",
+        'src/assets/gameResources/floorOption2.svg',
+        'src/assets/gameResources/floorOption3.svg',
+        'src/assets/gameResources/floorOption4.svg'
     ];
     const backgrounds = [
-        "src/gameResources/scene1.svg",
-        "src/gameResources/scene2.svg",
-        "src/gameResources/scene3.svg",
-        "src/gameResources/scene4.svg"
+        "src/assets/gameResources/scene1.svg",
+        "src/assets/gameResources/scene2.svg",
+        "src/assets/gameResources/scene3.svg",
+        "src/assets/gameResources/scene4.svg"
     ]
 
     const difficulty=["1 or 2", "1 - 3", "1 -4", "1-5"];

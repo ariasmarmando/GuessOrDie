@@ -1,10 +1,10 @@
 import './App.css'
-import mainCharVsIcon from './gameResources/mainChar/mainCharVsImg.svg'
-import enemyOneVsIcon from './gameResources/enemyOne/enemyOneVsImg.svg'
-import enemyTwoVsIcon from './gameResources/enemyTwo/enemyTwoVsImg.svg'
-import enemyThreeVsIcon from './gameResources/enemyThree/enemyThreeVsImg.svg'
-import enemyFourVsIcon from './gameResources/enemyFour/enemyFourVsImg.svg'
-import VsIcon from './gameResources/vsIcon2.svg'
+import mainCharVsIcon from './assets/gameResources/mainChar/mainCharVsImg.svg'
+import enemyOneVsIcon from './assets/gameResources/enemyOne/enemyOneVsImg.svg'
+import enemyTwoVsIcon from './assets/gameResources/enemyTwo/enemyTwoVsImg.svg'
+import enemyThreeVsIcon from './assets/gameResources/enemyThree/enemyThreeVsImg.svg'
+import enemyFourVsIcon from './assets/gameResources/enemyFour/enemyFourVsImg.svg'
+import VsIcon from './assets/gameResources/vsIcon2.svg'
 
 export default function StatusBar(props){
 

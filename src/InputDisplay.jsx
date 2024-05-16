@@ -1,4 +1,4 @@
-import nextIcon from './gameResources/nextIcon.svg'
+import nextIcon from './assets/gameResources/nextIcon.svg'
 export default function InputDisplay(props){
     return (
         <div className={"guessDisplay"}>

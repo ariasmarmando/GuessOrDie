@@ -5,8 +5,8 @@ import StatusBar from "./StatusBar.jsx";
 import React, {useRef, useState} from "react";
 import Dice from "./Dice.jsx";
 import CorrectIndicator from "./CorrectIndicator.jsx";
-import bgAudio from "./gameResources/threshold-michael-grubb-main-version-25748-02-03.mp3"
-import swordEffect from "./gameResources/swing-whoosh-5-198498.mp3"
+import bgAudio from "./assets/gameResources/threshold-michael-grubb-main-version-25748-02-03.mp3"
+import swordEffect from "./assets/gameResources/swing-whoosh-5-198498.mp3"
 import {faCircleQuestion} from "@fortawesome/free-solid-svg-icons/faCircleQuestion";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import PlayButton from "./PlayButton.jsx";
