@@ -160,16 +160,16 @@ export default function Dots(props){
 
 
     const floors = [
-        "gameResources/floorOption1.svg",
-        'gameResources/floorOption2.svg',
-        'gameResources/floorOption3.svg',
-        'gameResources/floorOption4.svg'
+        "src/gameResources/floorOption1.svg",
+        'src/gameResources/floorOption2.svg',
+        'src/gameResources/floorOption3.svg',
+        'src/gameResources/floorOption4.svg'
     ];
     const backgrounds = [
-        "gameResources/scene1.svg",
-        "gameResources/scene2.svg",
-        "gameResources/scene3.svg",
-        "gameResources/scene4.svg"
+        "src/gameResources/scene1.svg",
+        "src/gameResources/scene2.svg",
+        "src/gameResources/scene3.svg",
+        "src/gameResources/scene4.svg"
     ]
 
     const difficulty=["1 or 2", "1 - 3", "1 -4", "1-5"];
