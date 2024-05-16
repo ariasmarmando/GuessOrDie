@@ -160,16 +160,16 @@ export default function Dots(props){
 
 
     const floors = [
-        "src/assets/gameResources/floorOption1.svg",
-        'src/assets/gameResources/floorOption2.svg',
-        'src/assets/gameResources/floorOption3.svg',
-        'src/assets/gameResources/floorOption4.svg'
+        "https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/floorOption1.svg",
+        'https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/floorOption2.svg',
+        'https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/floorOption3.svg',
+        'https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/floorOption4.svg'
     ];
     const backgrounds = [
-        "src/assets/gameResources/scene1.svg",
-        "src/assets/gameResources/scene2.svg",
-        "src/assets/gameResources/scene3.svg",
-        "src/assets/gameResources/scene4.svg"
+        "https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/scene1.svg",
+        "https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/scene2.svg",
+        "https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/scene3.svg",
+        "https://raw.githubusercontent.com/ariasmarmando/GuessOrDie/f15c62d0f3f1bfb0a5ca15897fec0a6efc25813b/src/assets/gameResources/scene4.svg"
     ]
 
     const difficulty=["1 or 2", "1 - 3", "1 -4", "1-5"];
